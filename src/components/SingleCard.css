@@ -1,0 +1,24 @@
+.card {
+  position: relative;
+}
+.card img {
+  width: 100%;
+  display: block;
+  border: 2px solid #fff;
+  border-radius: 6px;
+}
+.card {
+  width: 200px;
+  height: 300px;
+  perspective: 1000px; /* Adjust the perspective value as needed */
+}
+
+.card .front {
+  transform: rotateY(90deg);
+  position: absolute;
+  transition: transform 0.4s ease; /* Adjust the duration and easing function as needed */
+}
+
+.flipped .front {
+  transform: rotateY(0deg);
+}
